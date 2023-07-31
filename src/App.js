@@ -2,10 +2,10 @@
 import "./App.css";
 import FormText from "./components/FormText";
 import Navi from "./components/Navi";
-import Abt from "./components/Abt";
+//import Abt from "./components/Abt";
 import Alert from "./components/Alert";
 import React, { useState } from "react";
-import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
+/*import { BrowserRouter as Main, Route, Routes } from "react-router-dom";*/
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -34,7 +34,7 @@ function App() {
   };
   return (
     <>
-      <Main>
+      {/*<Main>*/}
         <Navi
           title="Text_tool"
           about="About Us"
@@ -43,22 +43,22 @@ function App() {
         />
         <Alert alert={alert} />
         <div className="container">
-          <Routes>
-            <Route exact path="/about" element={<Abt />} />
-            <Route
+          {/*<Routes>
+            <Route exact path="/about" element={<Abt />} />*/}
+            {/*<Route
               exact
-              path="/"
-              element={
+          path="/"></Route>*/}
+              
                 <FormText
                   showAlert={showAlert}
                   heading="Welcome Friend !"
                   mode={mode}
                 />
-              }
-            />
-          </Routes>
+              
+            
+          {/*</Routes>*/}
         </div>
-      </Main>
+      {/*</Main>*/}
     </>
   );
 }
