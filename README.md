@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+# it is the text editor which is used to manipulae your text as per your need 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
